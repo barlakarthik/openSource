@@ -1,0 +1,83 @@
+ <html>
+    <title>enrolling for Citizenship</title>
+        <body>
+            <h1>Citizenship Registration</h1>
+            <form>
+         <table align = 'center'>
+             
+             <tr>
+                 <td>FirstName:</td>
+                 <td><input type = 'text' id = 'f' placeholder="first_name"/></td>
+             </tr>
+
+             <tr>
+                <td>LastName:</td>
+                <td><input type = 'text' id = 'l' placeholder="last_name"/></td>
+            </tr>
+
+            <tr>
+                <td>FatherName:</td>
+                <td><input type = 'text' id = 'fn' placeholder="father_name"/></td>
+            </tr>
+
+            <tr>
+                <td>State:</td>
+                <td><input type = 'text' id = 'st' placeholder="state"/></td>
+            </tr>
+
+            <tr>
+                <td>PhoneNumber:</td>
+                <td><input type = 'number' id = 'ph' placeholder="PhNo"/></td>
+            </tr>
+
+            <tr>
+                <td>adharNumber:</td>
+                <td><input type = 'number' value = '' id = 'adharNumber' placeholder="Adharcard.no"/></td>
+            </tr>
+            <tr>
+                <td>District</td>
+                <td><select name ='dist' id = 'di' >
+                    <option>Dist</option>
+                    <option value = 'Srikakulam'>sklm</option>
+                    <option value = 'Vizayanagaram'>vzm</option>
+                    <option value = 'Vishakapattanam'>vizag</option>
+                </select>
+            </tr>
+            <td><input type = 'submit' value = 'Submit' id = "k"></td>
+        </table>
+    </form>
+        </body>
+        <script>
+            const Citizenship= new Map();
+        const uniquePhoneNumber=new Set();
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (){
+          const formData =new FormData(this);
+          const entries = formData.entries();
+          const data =Object.fromEntries(entries);
+           console.log(data);
+
+          if (Citizenship.has(data.adharNumber))
+           {
+            alert('user already exist with this aadhar');
+            return false;
+          } else 
+              {
+              if (uniquePhoneNumber.has(data.phoneNumber))
+               {
+                alert('user already exist with this phone Number');
+                return false;
+            }
+            Citizenship.set(data.aadharNumber,data);
+          }
+          uniquePhoneNumber.add(data.phoneNumber);
+          alert('successfully registered');
+          form.reset();
+          console.log(Array.from(Citizenship.values()));
+        });            
+</script>
+</html>
+
+
+
+                 
