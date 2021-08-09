@@ -1,0 +1,282 @@
+<html>
+    <title>Registration form</title>
+    <head style = 'color:red'><h2 align = 'center'>Student Registration Form</h2></head>
+    <hr>
+    <hr>
+    <body style = 'color:yellowgreen' align = 'center' bgcolor="black">
+        <table cellpadding = '5' align = 'center'>
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type = 'text' id = 'f' placeholder="first_name"/></td>
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type = 'text' id = 'l' placeholder="Last_Name"/></td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td>
+                <select name = 'Birthday_date' id = 'bd'>
+                    <option>Day</option>
+                    <option value = '1'>1</option>
+                    <option value = '2'>2</option>
+                    <option value = '3'>3</option>
+                    <option value = '4'>4</option>
+                    <option value = '5'>5</option>
+                    <option value = '6'>6</option>
+                    <option value = '7'>7</option>
+                    <option value = '8'>8</option>
+                    <option value = '9'>9</option>
+                    <option value = '10'>10</option>
+                    <option value = '11'>11</option>
+                    <option value = '12'>12</option>
+                    <option value = '13'>13</option>
+                    <option value = '14'>14</option>
+                    <option value = '15'>15</option>
+                    <option value = '16'>16</option>
+                    <option value = '17'>17</option>
+                    <option value = '18'>18</option>
+                    <option value = '19'>19</option>
+                    <option value = '20'>20</option>
+                    <option value = '21'>21</option>
+                    <option value = '22'>22</option>
+                    <option value = '23'>23</option>
+                    <option value = '24'>24</option>
+                    <option value = '25'>25</option>
+                    <option value = '26'>26</option>
+                    <option value = '27'>27</option>
+                    <option value = '28'>28</option>
+                    <option value = '29'>29</option>
+                    <option value = '30'>30</option>
+                    <option value = '31'>31</option>
+                </select>
+                <select name = 'Birthday_Month' id = 'bm'>
+                    <option>Month</option>
+                    <option value = '1'>1</option>
+                    <option value = '2'>2</option>
+                    <option value = '3'>3</option>
+                    <option value = '4'>4</option>
+                    <option value = '5'>5</option>
+                    <option value = '6'>6</option>
+                    <option value = '7'>7</option>
+                    <option value = '8'>8</option>
+                    <option value = '9'>9</option>
+                    <option value = '10'>10</option>
+                    <option value = '11'>11</option>
+                    <option value = '12'>12</option>
+                </select>
+                <select name = 'Birthday_Year' id = 'bi'>
+                    <option>Year</option>
+                    <option value = '2000'>2000</option>
+                    <option value = '2001'>2001</option>
+                    <option value = '2002'>2002</option>
+                    <option value = '2003'>2003</option>
+                    <option value = '2004'>2004</option>
+                    <option value = '2005'>2005</option>
+                    <option value = '2006'>2006</option>
+                    <option value = '2007'>2007</option>
+                    <option value = '2008'>2008</option>
+                    <option value = '2009'>2009</option>
+                    <option value = '2010'>2010</option>
+                    <option value = '2011'>2011</option>
+                    <option value = '2012'>2012</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>EMAIL-ID</td>
+                <td><input type = 'text' id = 'em' placeholder="email"/></td>
+            </tr>
+            <tr>
+                <td>MOBILE NUMBER:</td>
+                <td><input type = 'text' id = 'mb' placeholder = 'ph.no'/></td>
+            </tr>
+            <tr>
+                <td>GENDER:</td>
+                <td id = 'gen'>
+                male<input type = 'radio' value = 'Male' placeholder="gender"/>
+                Female<input type = 'radio' value = 'female' placeholder="gender"/>
+                </td>
+            </tr>
+            <tr>
+                <td>ADDRESS:</td>
+                <td id = 'Ad'><textarea cols = '70' rows = '5' placeholder="adress"></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY:</td>
+                <td>
+                    <select name = 'City' id = 'city'>
+                        <option>city</option>
+                        <option value = 'Rajamundry'>Rajamundry</option>
+                        <option value = 'Vishakapattanam'>Vishakapattanam</option>
+                        <option value = 'Vijayawada'>Vijayawada</option>
+                        <option value = 'Thirupathi'>Thirupathi</option>
+                        <option value = 'Srikakulam'>Srikakulam</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>PIN</td>
+                <td><input type = 'text' id = 'pin' placeholder="pin"/>(max 6 numbers)</td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td>
+                    <select name = 'State' id = 'stat'>
+                        <option>state</option>
+                        <option value = 'Kerala'>Kerala</option>
+                        <option value = 'Andhra pradhesh'>Andhra pradhesh</option>
+                        <option value = 'Karnataka'>Karnataka</option>
+                        <option value = 'Tamilnadu'>Tamilnadu</option>
+                        <option value = 'Telangana'>Telangana</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input type = 'text' id = 'in' value = 'india' readonly = 'readonly'/>(30 Characters A-Z & a-z)</td>
+                <td>
+                    <select name = 'Country' id = 'Country'>
+                        <option>Country</option>
+                        <option value = 'Australia'>Australia</option>
+                        <option value = 'spain'>spain</option>
+                        <option value = 'italy'>italy</option>
+                        <option value = 'india'>india</option>
+                        <option value = 'America'>America</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>HOBBIES</td>
+                <td id = 'hob'>
+                <input type = 'checkbox' name = 'Hobbies_drawing' value = 'Drawing'/>Drawing
+                <input type = 'checkbox' name = 'Hobbies_singing' value = 'Singing'/>Singing
+                <input type = 'checkbox' name = 'Hobbies_dancing' value = 'Dancing'/>Dancing
+                <input type = 'checkbox' name = 'Hobbies_Gardening' value = 'Gardening'/>Gardening
+                <input type = 'checkbox' name = 'Hobbies_homedecor' value = 'Homedecor'/>Homedecor
+                <br>
+                Others<input type = 'checkbox' id = 'o' value = 'others'/>
+                <input type = 'text' id = 'ot'/>
+            </td>
+          </tr> 
+              <table align="center" cellpadding = '5'>
+                  <tr><td><b>QUALIFICATIONS:</b><br/><br/><br/></td></tr>
+                  <tr>
+                      <td align = 'center'id = 'sno'><b>Sl.no</b></td>
+                      <td align = 'center' id = 'ex'><b>Examination</b></td>
+                      <td align = 'center' id = 'Board'><b>Board</b></td>
+                      <td align = 'center' id = 'percent'><b>Percentage</b></td>
+                      <td align = 'center' id  = 'pass'><b>Year of Passing</b></td>
+             </tr> 
+             <tr>
+                 <td align="center">1</td>
+                 <td align="center"><input type = 'text' value = 'SSC'/></td>
+                 <td align="center"><input type = 'text' value = 'State Board'/></td>
+                 <td align="center"><input type = 'text' value = '73%'/></td>
+                 <td align="center"><input type = 'text' value = '2010'/></td>
+             </tr>
+             <tr>
+                 <td align = 'center'>2</td>
+                 <td align = 'center'><input type = 'text' value = 'Intermediate'/></td>
+                 <td align = 'center'><input type = 'text' value = 'Board of Intermediate'/></td>
+                 <td align = 'center'><input type = 'text' value = '81%'/></td>
+                 <td align = 'center'><input type = 'text' value = '2012'/></td>
+             </tr>
+             <tr>
+                 <td align = 'center'>3</td>
+                 <td align = 'center'><input type = 'text' value = 'BSc'/></td>
+                 <td align = 'center'><input type = 'text' value = 'Ambedhkar university'/></td>
+                 <td align = 'center'><input type = 'text' value = '80%'/></td>
+                 <td align = 'center'><input type = 'text' value = '2016'/></td>
+             </tr>
+             <tr>
+                 <td align = 'center'>4</td>
+                 <td align = 'center'><input  type = 'text' value = 'MSc' /></td>
+                 <td align = 'center'><input type = 'text' value = 'Andhra university'/></td>
+                 <td align = 'center'><input type = 'text' value = '71%'/></td>
+                 <td align = 'center'><input type= 'text' value = '2018'/></td>
+             </tr>
+             <tr>
+                 <td></td>
+                 <td align="center">Abbrevated</td>
+                 <td align = 'center'>School/College/University</td>
+                 <td align = 'center'>(up to 2 decimal%)</td>
+                 <td align = 'center'>must not be year gap</td>
+             </tr>
+             <tr>
+                 <td align = 'center'>SELECT<b>Applied for:</b></td>
+                 <td>
+                    Life sciences<input type = 'radio' id = 'ls' value  = 'Life sciences'/>
+                    Chemical sciences<input type = 'radio' id = 'cs' value = 'Chemical sciences'/>
+                    Physical sciences<input type = 'radio' id = 'ps' value = 'Physical sciences'/>
+                    Mathematical sciences<input type = 'radio' id = 'ms' value = 'Mathematical sciences'/>
+                    Physical eduaction<input type=  'radio' id = 'pe' value = 'Physical eduaction'/>
+                    Geoplogical sciences<input type = 'radio' id = 'gs' value = 'Geological_sciences'/>
+                 </td>
+             </tr>
+             <tr>
+                 <td align = 'center'>
+                 <input type = 'button' onclick="addOn()" id = 'k'value = 'Submit'/>
+                 <input type = 'button' id = 'd' value = 'Reset'/>
+                </td>
+             </tr>
+        </table>
+        <script>
+            function addOn(){
+                var a = document.getElementById('f').value;
+                var b = document.getElementById('l').value;
+                var c = document.getElementById('bd').value;
+                var d = document.getElementById('bm').value;
+                var e = document.getElementById('bi').value;
+                var f = document.getElementById('em').value;
+                var g = document.getElementById('mb').value;
+                var h = document.getElementById('gen').value;
+                var i = document.getElementById('Ad').value;
+                var j = document.getElementById('city').value;
+                var k = document.getElementById('pin').value;
+                var l = document.getElementById('stat').value;
+                var m = document.getElementById('in').value;
+                var n = document.getElementById('hob').value;
+                var o = document.getElementById('o').value;
+                var p = document.getElementById('ot').value;
+                var q = document.getElementById('ls').value;
+                var r = document.getElementById('cs').value;
+                var s = document.getElementById('ps').value;
+                var t = document.getElementById('ms').value;
+                var u = document.getElementById('pe').value;
+                var v = document.getElementById('gs').value;
+                var w = document.getElementById('k').value;
+                var x = document.getElementById('d').value;
+                 var x_  = a;
+                 var w_ = b;
+                 var v_ = c;
+                 var u_ = d;
+                 var t_ = e;
+                 var s_ = f;
+                 var r_ = g;
+                 var q_ = h;
+                 var p_ = i;
+                 var o_  = j;
+                 var n_ = k;
+                 var m_ = l;
+                 var l_ = m;
+                 var k_ = n;
+                 var j_ =  o;
+                 var i_ = p;
+                 var h_ = q;
+                 var g_ = r;
+                 var f_ = s;
+                 var e_ = t;
+                 var d_ = u;
+                 var c_ = v;
+                 var b_ = w;
+                 var a_ = x
+                 var rigid = [];
+                 rigid.push(x_,w_,v_,u_,t_,s_,r_,q_,p_,o_,n_,m_,l_,k_,j_,i_,h_,g_,f_,e_,d_,c_,b_,a_);
+                 console.log(rigid);
+            }
+        </script>
+    
+    </body>
+</html>
+

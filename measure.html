@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>bmi calculator</title>
+    </head>
+    <body align  = "center">
+        <div id = "container">
+            <div id = "calculator">
+                <h2><B>CALCULATE BODY MASS INDEX</B></h2>
+                <input type = "text" id = "weight" placeholder="Weight in KG">
+                <input type = "text" id = "height" placeholder="height in CM">
+                <br>
+                <input type = "submit" value = "Calculate" id = "Calculate">
+                <div id = "yourBMI">Your BMI is :</div>
+            </div>
+        </div>
+        <script>
+            const weight = document.querySelector("#weight");
+            const height = document.querySelector("#height");
+            const calculate = document.querySelector("#Calculate");
+            const yourBMI = document.querySelector("#yourBMI");
+            calculate.addEventListener("click", function (){
+                let value = weight.value/(height.value*height.value)*10000;
+                    yourBMI.innerHTML = `Your BMI is :${value.toFixed(2)}`
+            });
+        </script>
+    </body>
+</html>
