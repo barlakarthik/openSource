@@ -1,0 +1,19 @@
+<html>
+<font size="6"><center><head>working with indian railway time</br>
+<span id="karthik"></span>
+<script>
+function getTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+document.getElementById("karthik").innerHTML=h+ ":" +m+ ":" +s;
+setInterval("getTime()",1000);
+}
+getTime();
+</script>
+</font></head><center>
+<body bgcolor="skyblue">
+</body>
+</html>
